@@ -3,7 +3,7 @@ def run_guessing_game
   number = (1..6).Random
   user_input == gets.chomp
   if user_input == number
-    "You guessed the correct number!"
+    "You guessed the correct number!" || "The computer guessed #{number}"
   else
     "Goodbye!"
   end
