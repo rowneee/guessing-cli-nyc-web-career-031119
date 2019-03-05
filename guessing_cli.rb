@@ -10,7 +10,7 @@ def run_guessing_game
       end
       user_response = gets.chomp
       number = rand(1..6)
-      if user_response.to_i != number
+      if user_response.to_i = number
         "Goodbye!"
       end
     end
