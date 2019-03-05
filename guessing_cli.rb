@@ -12,6 +12,6 @@ def run_guessing_game
       number = rand(1..6)
     end
       if user_response == "exit"
-        "Goodbye!"
+        puts "Goodbye!"
       end
 end
