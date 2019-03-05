@@ -7,7 +7,10 @@ def run_guessing_game
         "You guessed the correct number!" 
       else  
         "The computer guessed #{number}"
-      elsif user_response.to_i != number
+      end
+      us
+      new_num = rand(1..6)
+      if user_response.to_i != number
         "Goodbye!"
       end
     end
