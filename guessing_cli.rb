@@ -8,4 +8,5 @@ def run_guessing_game
       elsif user_response != number
         "Goodbye!"
       end
+    end
 end
