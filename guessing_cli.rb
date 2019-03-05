@@ -8,10 +8,10 @@ def run_guessing_game
       else  
         "The computer guessed #{number}"
       end
-      us
+      user_response = gets.chomp
       new_num = rand(1..6)
-      if user_response.to_i != number
-        "Goodbye!"
-      end
+        if user_response.to_i != number
+          "Goodbye!"
+        end
     end
 end
