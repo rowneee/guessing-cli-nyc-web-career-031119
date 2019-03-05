@@ -3,9 +3,9 @@ def run_guessing_game
   user_response == gets.chomp
   number = rand(1..6)
     while user_response != "exit" do
-      if user_response == number
+      if user_response.to_s == number
         "You guessed the correct number!" || "The computer guessed #{number}"
-      elsif user_response != number
+      elsif user_response.to_i != number
         "Goodbye!"
       end
     end
